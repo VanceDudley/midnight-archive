@@ -59,6 +59,8 @@
     <div class="sticky top-0 w-full flex justify-end pt-11 pr-8">
       <svelte:element
         this={canGoBack ? 'button' : 'a'}
+        role="button"
+        tabindex="0"
         class="items-center justify-center hidden w-10 h-10 mb-8 transition bg-white rounded-full shadow-md -top-1 -left-16 lg:flex group shadow-zinc-800/5 border border-zinc-700/50 dark:bg-zinc-800 ring-0 focus-visible:ring-2 ring-white/10 hover:border-zinc-700 hover:ring-white/20"
         href={canGoBack ? undefined : '/posts'}
         aria-label="Go back to posts"
@@ -70,10 +72,12 @@
     </div>
   </div>
 
-  <div class="w-full mx-auto overflow-x-hidden">
+  <div
+    class="w-full mx-auto overflow-x-hidden bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-zinc-100/10"
+  >
     <article>
       <header class="flex flex-col">
-        <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
+        <h1 class="mt-6 mb-3 text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
           {data.post.title}
         </h1>
         <PostDate class="text-sm sm:text-base" post={data.post} decorate collapsed />
@@ -116,16 +120,16 @@
   </div>
 </div>
 
-<style lang="postcss">
+<style>
   .root {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  @media screen(lg) {
+  @media (min-width: 1024px) {
     .root {
       /* 42rem matches max-w-2xl */
-      grid-template-columns: 1fr 42rem 1fr;
+      grid-template-columns: 1fr calc(80ch + 1.5rem) 1fr;
     }
   }
 </style>

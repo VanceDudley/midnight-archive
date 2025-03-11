@@ -48,7 +48,9 @@
 </div>
 
 <style>
+  @import 'tailwindcss';
+
   a {
-    @apply flex items-center gap-2 font-medium text-zinc-300;
+    @apply flex items-center gap-2 font-semibold text-zinc-300;
   }
 </style>

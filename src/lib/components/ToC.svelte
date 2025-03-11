@@ -68,12 +68,14 @@
 </Card>
 
 <style lang="postcss">
+  @import 'tailwindcss';
+
   .heading {
     padding-left: calc(var(--depth, 0) * 0.35rem);
   }
 
   .active {
-    @apply font-medium text-slate-900 border-l-2 -ml-[2px];
+    @apply font-semibold text-slate-900 border-l-2 -ml-[2px];
   }
 
   /* can't use dark: modifier in @apply */

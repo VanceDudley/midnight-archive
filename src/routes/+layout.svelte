@@ -1,8 +1,6 @@
 <script>
   import '../app.css'
   import '../prism.css'
-  import MoonIcon from 'heroicons-svelte/solid/MoonIcon.svelte'
-  import SunIcon from 'heroicons-svelte/solid/SunIcon.svelte'
   import { browser } from '$app/environment'
   import { name } from '$lib/info'
   import { page } from '$app/stores'
@@ -74,12 +72,6 @@
     window.addEventListener('resize', resizeCanvas)
   })
 
-  //   afterNavigate(() => {
-  //     if (!browser) return
-  //     console.log('navigate')
-  //     resizeCanvas()
-  //   })
-
   onDestroy(() => {
     if (!browser) return
     window.removeEventListener('resize', resizeCanvas)
@@ -106,5 +98,5 @@
   <canvas
     class="absolute -z-10 top-0 h-full w-screen bg-gradient-to-b from-black to-[#060a13]"
     bind:this={canvas}
-  />
+  ></canvas>
 </div>
