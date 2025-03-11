@@ -29,7 +29,9 @@
   <section class="w-full">
     <div class="flex items-center justify-between gap-4 mb-8">
       <h2 class="text-sm font-semibold sm:text-base text-zinc-400">Recently Published</h2>
-      <a href="/combined" class="flex items-center gap-1 text-sm font-semibold text-violet-500"
+      <a
+        href="/combined"
+        class="flex items-center gap-1 text-sm font-semibold text-violet-500 px-2 py-1 hover:bg-zinc-800/50 rounded-md transition-colors duration-150 ease-in-out"
         >View All <ArrowRightIcon class="w-4 h-4" /></a
       >
     </div>

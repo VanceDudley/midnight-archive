@@ -99,16 +99,35 @@
 <div class="flex flex-col min-h-screen">
   <div class="flex flex-col flex-grow w-full px-4 py-2">
     <header class="flex items-center justify-between w-full max-w-2xl py-4 mx-auto lg:pb-8">
-      <a
-        class="text-lg font-bold sm:text-2xl !text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-violet-400"
-        href="/"
+      <span
+        class="px-2 py-0.5 hover:bg-zinc-800/50 rounded-md transition-colors duration-150 ease-in-out"
       >
-        {name}
-      </a>
-      <ul class="flex gap-2 text-sm font-semibold">
-        <li><a href="/poems">Poems</a></li>
-        <li><a href="/reviews">Reviews</a></li>
-        <li><a href="/writings">Writing</a></li>
+        <a
+          class="text-lg font-bold sm:text-2xl !text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-violet-400"
+          href="/"
+        >
+          {name}
+        </a>
+      </span>
+      <ul class="flex gap-2 font-semibold">
+        <li>
+          <a
+            class="px-2 py-1 hover:bg-zinc-800/50 rounded-md transition-colors duration-150 ease-in-out"
+            href="/poems">Poems</a
+          >
+        </li>
+        <li>
+          <a
+            class="px-2 py-1 hover:bg-zinc-800/50 rounded-md transition-colors duration-150 ease-in-out"
+            href="/reviews">Reviews</a
+          >
+        </li>
+        <li>
+          <a
+            class="px-2 py-1 hover:bg-zinc-800/50 rounded-md transition-colors duration-150 ease-in-out"
+            href="/writings">Writing</a
+          >
+        </li>
       </ul>
     </header>
     <main
