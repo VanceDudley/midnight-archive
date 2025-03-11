@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [sveltekit(), tailwindcss()],
   // allows vite access to ./posts
   server: {
+    allowedHosts: [
+      "coder.zoeissleeping.xyz"
+    ],
     fs: {
       allow: ['./']
     }

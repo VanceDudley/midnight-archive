@@ -68,11 +68,11 @@
     // return out if the window did not change meaningfully, this prevents
     // the canvas from resizing on safari and probably other mobile browsers
     if (
-      canvas.width === window.innerWidth &&
+      canvas.width === document.body.clientWidth &&
       canvas.height === document.documentElement.offsetHeight
     )
       return
-    canvas.width = window.innerWidth
+    canvas.width = document.body.clientWidth
     canvas.height = document.documentElement.offsetHeight
     initializeStars()
   }
@@ -119,7 +119,7 @@
     </main>
   </div>
   <canvas
-    class="absolute -z-10 top-0 h-full w-screen bg-gradient-to-b from-black to-[#060a13]"
+    class="absolute -z-10 top-0 max-w-full h-full bg-gradient-to-b from-black to-[#060a13]"
     bind:this={canvas}
   ></canvas>
 </div>
