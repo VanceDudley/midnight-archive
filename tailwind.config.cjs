@@ -4,6 +4,9 @@ module.exports = {
   plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {},
+    fontFamily: {
+      serif: ['"PT Serif"', 'serif']
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
@@ -103,13 +106,11 @@ module.exports = {
             fontWeight: theme('fontWeight.semibold')
           },
           h2: {
-            fontSize: theme('fontSize.xl')[0],
             lineHeight: theme('lineHeight.7'),
             marginTop: theme('spacing.20'),
             marginBottom: theme('spacing.4')
           },
           h3: {
-            fontSize: theme('fontSize.base')[0],
             lineHeight: theme('lineHeight.7'),
             marginTop: theme('spacing.16'),
             marginBottom: theme('spacing.4')
@@ -143,7 +144,6 @@ module.exports = {
           ':is(h1,h2,h3,h4,h5,h6) a': {
             color: 'var(--tw-prose-headings)',
             textDecoration: 'none',
-            fontWeight: 'inherit'
           },
           strong: {
             color: 'var(--tw-prose-bold)',

@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 @import './prism.css';
 
 @layer base {
+    :root {
+        --font-serif: "PT Serif", serif;
+    }
+
     body {
-        @apply text-zinc-400;
+        @apply text-zinc-300;
     }
 
     h1,
@@ -12,7 +17,31 @@
     h4,
     h5,
     h6 {
-        @apply text-zinc-200;
+        @apply text-zinc-200 font-bold! my-2 font-serif;
+    }
+
+    p {
+        @apply mb-4;
+    }
+
+    h1 {
+        @apply text-4xl!;
+    }
+
+    h2 {
+        @apply text-3xl!;
+    }
+
+    h3 {
+        @apply text-2xl!;
+    }
+
+    h4 {
+        @apply text-xl!;
+    }
+
+    h5 {
+        @apply text-lg!;
     }
 
     hr {
@@ -20,7 +49,8 @@
     }
 
     pre {
-        overflow-x: scroll;
+        overflow-x: auto;
+        @apply my-2 bg-zinc-700/60 rounded-xl border border-zinc-200/10 py-2 px-4;
     }
 
     img,
