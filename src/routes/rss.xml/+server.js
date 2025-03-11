@@ -2,14 +2,13 @@
 // It is OK to delete this file if you don't want an RSS feed.
 // credit: https://scottspence.com/posts/make-an-rss-feed-with-sveltekit#add-posts-for-the-rss-feed
 
-import { posts } from '$lib/data/posts'
+import { posts } from '$lib/data/combined'
 import { name, website } from '$lib/info'
 
 export const prerender = true
 
 // update this to something more appropriate for your website
 const websiteDescription = `${name}'s blog`
-const postsUrl = `${website}/posts`
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
@@ -31,10 +30,10 @@ export async function GET({ setHeaders }) {
             (post) =>
               `
               <item>
-                <guid>${postsUrl}/${post.slug}</guid>
+                <guid>${website}/${post.subdir.substring(0, post.subdir.length - 1)}/${post.slug}</guid>
                 <title>${post.title}</title>
                 <description>${post.preview.text}</description>
-                <link>${postsUrl}/${post.slug}</link>
+                <link>${website}/${post.subdir.substring(0, post.subdir.length - 1)}/${post.slug}</link>
                 <pubDate>${new Date(post.date).toUTCString()}</pubDate>
             </item>
           `

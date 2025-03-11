@@ -2,7 +2,7 @@
 // It's helpful for SEO but does require you to keep it updated to reflect the routes of your website.
 // It is OK to delete this file if you'd rather not bother with it.
 
-import { posts } from '$lib/data/posts'
+import { writings, reviews, poems } from '$lib/data/combined'
 import { website } from '$lib/info'
 
 export const prerender = true
@@ -36,22 +36,44 @@ export async function GET({ setHeaders }) {
         <priority>1.0</priority>
       </url>
 
-      ${posts
-        .map(
-          (post) => `<url>
-            <loc>${getPostUrl(post.slug)}</loc>
-            <lastmod
+      ${writings.map((post) => `<url>
+        <loc>${getPostUrl(post.slug)}</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod
               >${
                 post.updated
                   ? new Date(post.updated).toISOString()
                   : new Date(post.date).toISOString()
               }</lastmod
             >
-            <changefreq>monthly</changefreq>
-            <priority>1.0</priority>
-          </url>`
-        )
-        .join('')}
+        <priority>0.8</priority>
+      </url>`).join('')}
+
+      ${reviews.map((post) => `<url>
+        <loc>${getPostUrl(post.slug)}</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod
+              >${
+                post.updated
+                  ? new Date(post.updated).toISOString()
+                  : new Date(post.date).toISOString()
+              }</lastmod
+            >
+        <priority>0.8</priority>
+      </url>`).join('')}
+
+      ${poems.map((post) => `<url>
+        <loc>${getPostUrl(post.slug)}</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod
+              >${
+                post.updated
+                  ? new Date(post.updated).toISOString()
+                  : new Date(post.date).toISOString()
+              }</lastmod
+            >
+        <priority>0.7</priority>
+      </url>`).join('')}
     </urlset>`
 
   return new Response(xml)
