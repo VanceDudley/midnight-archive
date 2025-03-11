@@ -4,7 +4,7 @@ import readingTime from 'reading-time/lib/reading-time.js';
 import { render } from 'svelte/server';
 
 // Ensure this runs only on the server
-export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true, query: { 
+const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true, query: { 
     // This is a key change - explicitly request the content and metadata
     content: true,
     frontmatter: true 
@@ -45,7 +45,11 @@ export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: 
   // Sort by date
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
-export const combinedPosts = posts
+export const combinedPosts = posts.map((post, index, allPosts) => ({
+    ...post,
+    next: allPosts[index - 1] || null,
+    previous: allPosts[index + 1] || null
+  }))
 
 export const reviews = posts.filter((post) => post.subdir === 'reviews').map((post, index, allReviews) => ({
     ...post,

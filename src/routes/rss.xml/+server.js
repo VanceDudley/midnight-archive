@@ -2,7 +2,7 @@
 // It is OK to delete this file if you don't want an RSS feed.
 // credit: https://scottspence.com/posts/make-an-rss-feed-with-sveltekit#add-posts-for-the-rss-feed
 
-import { posts } from '$lib/data/combined'
+import { combinedPosts } from '$lib/data/combined'
 import { name, website } from '$lib/info'
 
 export const prerender = true
@@ -25,7 +25,7 @@ export async function GET({ setHeaders }) {
         <link>${website}</link>
         <description>${websiteDescription}</description>
         <atom:link href="${website}/rss.xml" rel="self" type="application/rss+xml" />
-        ${posts
+        ${combinedPosts
           .map(
             (post) =>
               `

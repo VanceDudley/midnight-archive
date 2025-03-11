@@ -1,8 +1,8 @@
-import { posts } from '$lib/data/combined'
+import { combinedPosts } from '$lib/data/combined'
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
     return {
-        posts: posts.slice(0, 5)
+        posts: combinedPosts.slice(0, 5)
       };
 }

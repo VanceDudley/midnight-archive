@@ -17,8 +17,10 @@
 
 <div class="flex flex-col flex-grow">
   <header class="pt-4">
-    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Poems from the Midnight Archive</h1>
-    <p class="mt-6">A collection of my poems from the Midnight Archive</p>
+    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
+      Everything published on the Midnight Archive
+    </h1>
+    <p class="mt-6">A collection of all my published content from the Midnight Archive</p>
   </header>
 
   <div class="mt-16 sm:mt-20">
