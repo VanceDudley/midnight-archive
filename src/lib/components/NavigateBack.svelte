@@ -9,7 +9,7 @@
     if (
       (from && from.url.pathname.startsWith('/poem')) ||
       from.url.pathname.startsWith('/review') ||
-      from.url.pathname.startsWith('/writing') ||
+      from.url.pathname.startsWith('/general') ||
       from.url.pathname.startsWith('/combined')
     ) {
       canGoBack = true

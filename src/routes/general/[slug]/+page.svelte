@@ -5,4 +5,4 @@
   export let data
 </script>
 
-<PostRender {data} target={'/writings'} />
+<PostRender {data} target={'/generals'} />

@@ -7,7 +7,8 @@ export default defineConfig({
   // allows vite access to ./posts
   server: {
     allowedHosts: [
-      "coder.zoeissleeping.xyz"
+      "coder.zoeissleeping.xyz",
+      "pleasing-osprey-specially.ngrok-free.app",
     ],
     fs: {
       allow: ['./']

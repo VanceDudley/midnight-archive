@@ -5,12 +5,13 @@
 // URL of your website
 export const website = 'https://themidnightarchive.blog'
 
-export const title = 'The Midnight Archive' 
+export const title = 'The Midnight Archive'
 export const name = `${title}`
 
 // Used for the landing page & footer of posts
-export const avatar = 'https://picsum.photos/id/203/250/250'
-export const bio = `The midnight archive is a place where you can find the whispers of the stars. Released at midnight
+export const avatar = '/pfp.jpg'
+export const bio = `
+The midnight archive is a place where you can find the whispers of the stars. Released at midnight
 `
 
 // Your social usernames, empty strings won't be used.
@@ -19,4 +20,4 @@ export const bio = `The midnight archive is a place where you can find the whisp
 export const github = ''
 export const twitter = ''
 export const linkedin = ''
-export const instagram = ''
+export const instagram = 'vance_dudley547'

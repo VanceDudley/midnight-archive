@@ -4,11 +4,13 @@ import readingTime from 'reading-time/lib/reading-time.js';
 import { render } from 'svelte/server';
 
 // Ensure this runs only on the server
-const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true, query: { 
+const posts = Object.entries(import.meta.glob('/posts/**/*.md', {
+  eager: true, query: {
     // This is a key change - explicitly request the content and metadata
     content: true,
-    frontmatter: true 
-  } }))
+    frontmatter: true
+  }
+}))
   .map(([filepath, post]) => {
     const preview = parse(render(post.default).body).querySelector('p');
 
@@ -46,25 +48,25 @@ const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true, q
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
 export const combinedPosts = posts.map((post, index, allPosts) => ({
-    ...post,
-    next: allPosts[index - 1] || null,
-    previous: allPosts[index + 1] || null
-  }))
+  ...post,
+  next: allPosts[index - 1] || null,
+  previous: allPosts[index + 1] || null
+}))
 
 export const reviews = posts.filter((post) => post.subdir === 'reviews').map((post, index, allReviews) => ({
-    ...post,
-    next: allReviews[index - 1] || null,
-    previous: allReviews[index + 1] || null
+  ...post,
+  next: allReviews[index - 1] || null,
+  previous: allReviews[index + 1] || null
 }))
 export const poems = posts.filter((post) => post.subdir === 'poems').map((post, index, allPoems) => ({
-    ...post,
-    next: allPoems[index - 1] || null,
-    previous: allPoems[index + 1] || null
+  ...post,
+  next: allPoems[index - 1] || null,
+  previous: allPoems[index + 1] || null
 }))
-export const writings = posts.filter((post) => post.subdir === 'writings').map((post, index, allWritings) => ({
-    ...post,
-    next: allWritings[index - 1] || null,
-    previous: allWritings[index + 1] || null
+export const generalPosts = posts.filter((post) => post.subdir === 'generals').map((post, index, generalPosts) => ({
+  ...post,
+  next: generalPosts[index - 1] || null,
+  previous: generalPosts[index + 1] || null
 }))
 
 

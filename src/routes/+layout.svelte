@@ -125,7 +125,7 @@
         <li>
           <a
             class="px-2 py-1 hover:bg-zinc-800/50 rounded-md transition-colors duration-150 ease-in-out"
-            href="/writings">Writing</a
+            href="/generals">General</a
           >
         </li>
       </ul>
