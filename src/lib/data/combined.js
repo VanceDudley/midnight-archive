@@ -13,6 +13,7 @@ const posts = Object.entries(import.meta.glob('/posts/**/*.md', {
 }))
   .map(([filepath, post]) => {
     const preview = parse(render(post.default).body).querySelector('p');
+    const date = new Date(post.metadata.date)
 
     return {
       ...post.metadata,
@@ -30,7 +31,7 @@ const posts = Object.entries(import.meta.glob('/posts/**/*.md', {
 
       // Format date as yyyy-MM-dd
       date: post.metadata.date
-        ? format(new Date(post.metadata.date), 'yyyy-MM-dd')
+        ? format(new Date(date.getTime() + date.getTimezoneOffset() * 60 * 1000), 'yyyy-MM-dd')
         : undefined,
 
       preview: {
