@@ -2,95 +2,89 @@
 title: Again
 date: 2025-04-29
 ---
-
 <br/> 
-
 I reached out to you,
 <br/> 
 already wishing you were somebody else.
-  <br/> 
+<br/> 
 Already trying to shape you
-  <br/> 
+<br/> 
 for a hole you didn't fit.
-
 <br/>
 <br/> 
-
 I laughed at all your jokes, 
 <br/> 
 built friendships and shared stories, 
- <br/> 
+<br/> 
 but I was somewhere else — 
- <br/> 
+<br/> 
 flipping through memories like a scrapbook, 
- <br/> 
+<br/> 
 hoping for one of the pages to stick. 
-
 <br/> 
 <br/> 
 You smiled like you didn’t know, 
 <br/> 
 and maybe you didn’t — 
- <br/> 
+<br/> 
 maybe you thought 
- <br/> 
+<br/> 
 I was there for you to keep. 
-
 <br/> 
 <br/> 
 But every moment that you and I shared, 
 <br/> 
 was just an attempt to put back together what I lost, 
- <br/> 
+<br/> 
 a way to pretend it hadn’t all slipped through my fingers. 
 <br/> 
 <br/> 
 I built these moments with you 
 <br/> 
 the way a man rebuilds a house 
- <br/> 
+<br/> 
 on broken land— 
- <br/> 
+<br/> 
 knowing the cracks would spread, 
 <br/> 
 but still hammering the nails in anyway. 
 <br/> 
 <br/> 
 This isn’t just to the girl who I happened to call mine. 
- <br/> 
+<br/> 
 It’s for every girl who ever caught a little piece of me, 
- <br/> 
+<br/> 
 every heart that thought I might be a suitable home, 
- <br/> 
+<br/> 
 and found nothing but dust left in their hands. 
 <br/> 
 <br/> 
 I wanted to mean it. 
- <br/> 
+<br/> 
 I wanted to stay. 
- <br/> 
+<br/> 
 I wanted to be someone who cared. 
- <br/> 
+<br/> 
 But wanting doesn’t build anything real. 
- <br/> 
+<br/> 
 And you just can’t hold onto something that was never fully there. 
 <br/> 
 <br/> 
 You deserve someone here. 
- <br/> 
+<br/> 
 Someone whole. 
- <br/> 
+<br/> 
 Not someone still reaching backward 
- <br/> 
+<br/> 
 every step. 
 <br/> 
 <br/> 
 I’m sorry. 
 <br/> 
 I was always sorry. 
- <br/> 
+<br/> 
 I never learned how to be anywhere 
- <br/> 
+<br/> 
 but back there. 
 
  <br/> 
