@@ -114,7 +114,7 @@ and I couldn't afford the real box set.
 
 But I thought maybe
 
-you wouldn't mind.
+you wouldn't mind the quality.
 
 <br/>
 <br/>
@@ -159,7 +159,7 @@ but being to scared to draw you imperfectly,
 
 I instead sketched *Velma*,
 
-because she doesn'thav to be perfect.
+because she doesn't have to be perfect.
 
 <br/>
 <br/>
